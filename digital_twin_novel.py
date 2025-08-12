@@ -248,7 +248,9 @@ def animate_digital_twin(frame_model, total_frames=300):
 
     ani = FuncAnimation(fig, update, frames=total_frames, interval=100, blit=True)
     plt.tight_layout()
+
     ani.save('frame_animation.gif', writer='pillow', fps=10)
+
 
     plt.show()
 
